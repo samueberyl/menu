@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+    <div class="container">
+     <div>
+         <h1 class="header-text">Do you love coding</h1>
+     </div>
+     <div class="gif-container">
+         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3ltM3VubzdvcjE3eHRjamxvbWg0bGt2bXQxa3E4Mjh2aWc2eXRleSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OPU6wzx8JrHna/giphy.gif" alt="cute animated illustration">
+     </div>
+
+    <div class="buttons">
+        <button class="btn"id="yesButton"onclick="nextPage()">yes</button>
+        <button class="btn"id="noButton"onmouseover="moveButton()" onclick="moveButton()">no</button>
+        <script>
+          function nextPage(){
+            window.location.href="yes.html";
+          }
+         function moveButton() {
+            var x=Math.random()*(window.innerWidth-document.getElementsById('nobutton').offsetWidth);
+            var y=Math.random()*(window.innerHeight-document.getElementsById('nobutton').offsetHeight);
+            document.getElementById(nobutton).style.left=`${x}px`;
+            document.getElementById('noButton').style.top=`${y}px`;
+        }
+        </script>
+        </div>
+    </div>
+</body>
+</html> 
